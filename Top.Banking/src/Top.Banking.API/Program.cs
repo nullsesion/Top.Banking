@@ -1,4 +1,3 @@
-
 using Scalar.AspNetCore;
 
 namespace Top.Banking.API
@@ -14,7 +13,6 @@ namespace Top.Banking.API
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
-            builder.Services.AddSwaggerGen();
 
            var app = builder.Build();
 
@@ -23,8 +21,6 @@ namespace Top.Banking.API
             {
                 app.MapOpenApi();
                 app.MapScalarApiReference();
-                app.UseSwagger();
-                app.UseSwaggerUI();
             }
 
             app.UseHttpsRedirection();
