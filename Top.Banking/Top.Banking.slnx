@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Top.Banking.API/Top.Banking.API.csproj" Id="936abd2e-d2d6-4edb-8ba1-44e1f4642b89" />
+    <Project Path="src/Top.Banking.Application/Top.Banking.Application.csproj" Id="32134394-595c-456a-8ca7-5aa4050c4da6" />
+    <Project Path="src/Top.Banking.Domain/Top.Banking.Domain.csproj" Id="6158e98a-850e-4804-9b78-c3c7cbae4521" />
+  </Folder>
+</Solution>

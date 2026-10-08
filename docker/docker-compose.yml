@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: banking-system-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-banking_system}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    volumes:
+      - banking-system-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  banking-system-postgres-data:
